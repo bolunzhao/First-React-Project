@@ -1,7 +1,9 @@
 import React from "react";
 import MenuConfig from "../../config";
 import * as Icon from "@ant-design/icons";
+import { useNavigate } from "react-router-dom";
 import { Button, Layout, Menu, theme } from "antd";
+
 const { Header, Sider, Content } = Layout;
 
 // Dynamically get icons
@@ -27,7 +29,12 @@ const items = MenuConfig.map((icon) => {
 });
 
 const CommonSider = ({ collapsed }) => {
-  console.log(collapsed, "commonSider");
+  const navigate = useNavigate();
+
+  // Click on menu
+  const selectMenu = (e) => {
+    navigate(e.key)
+  };
   return (
     <Sider trigger={null} collapsed={collapsed}>
       <h3 className="app-name">
@@ -38,6 +45,10 @@ const CommonSider = ({ collapsed }) => {
         mode="inline"
         defaultSelectedKeys={["1"]}
         items={items}
+        style={{
+          height: "100%",
+        }}
+        onClick={selectMenu}
       />
     </Sider>
   );

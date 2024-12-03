@@ -52,7 +52,7 @@ const CommonHeader = ({ collapsed }) => {
       menu={{items}}>
         <Avatar
           size={36}
-          src={<img src={require("../../assets/images/user.png")} />}
+          src={<img src={require("../../assets/images/spiderman.jpg")} />}
         />
       </Dropdown>
     </Header>

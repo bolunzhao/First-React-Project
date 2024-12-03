@@ -51,37 +51,37 @@ export default {
         // Bar chart
         userData: [
           {
-            date: 'Monday',
+            date: 'Mon',
             new: 5,
             active: 200
           },
           {
-            date: 'Tuesday',
+            date: 'Tue',
             new: 10,
             active: 500
           },
           {
-            date: 'Wednesday',
+            date: 'Wed',
             new: 12,
             active: 550
           },
           {
-            date: 'Thursday',
+            date: 'Thu',
             new: 60,
             active: 800
           },
           {
-            date: 'Friday',
+            date: 'Fri',
             new: 65,
             active: 550
           },
           {
-            date: 'Saturday',
+            date: 'Sat',
             new: 53,
             active: 770
           },
           {
-            date: 'Sunday',
+            date: 'Sun',
             new: 33,
             active: 170
           }

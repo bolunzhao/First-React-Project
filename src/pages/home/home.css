@@ -1,6 +1,6 @@
 .home img{
-    width: 110px;
-    height: 110px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     margin-right: 40px;
 }
@@ -8,6 +8,10 @@
 .home .name{
     font-size: 32px;
     margin-bottom: 10px;
+}
+
+.home .table-content{
+    overflow: auto;
 }
 
 .home .user {
@@ -27,4 +31,56 @@
 .home .login-info p span{
     color: #666666;
     margin-left: 10px;
+}
+
+.home .num{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.home .num .ant-card{
+    height: 100px;
+    width: 33%;
+}
+
+.home .num .ant-card-body{
+    display: flex;
+    padding: 10px 25px;
+}
+
+.home .num .icon-box{
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    line-height: 85px;
+    color: #fff;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    margin-left: 1px;
+}
+
+.home .num .detail{
+    width: 150px;
+}
+
+.home .num .anticon {
+    font-size: 30px;
+}
+
+.home .num .detail .num {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+.home .num .detail .txt {
+    font-size: 14px;
+    text-align: left;
+    margin-left: 10px;
+    color: #999999;
+}
+
+.home .graph {
+    display: flex;
+    margin-top: 20px;
 }
